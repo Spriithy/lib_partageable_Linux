@@ -1,2 +1,6 @@
 *.so
 *.o
+bin/
+lib/
+.vscode/
+main/main
