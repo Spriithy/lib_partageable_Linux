@@ -1,6 +1,6 @@
 
 
-CPPFLAGS=-I../interfaces -Wno-write-strings
+CPPFLAGS=-I../interfaces -Wno-write-strings -fpermissive
 BIN_DIR=../bin
 COMPONENTS_NEEDED=Composant1 Composant2
 COMPONENTS_DIR=../lib

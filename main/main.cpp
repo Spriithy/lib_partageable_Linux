@@ -20,8 +20,16 @@ void check(void *handle)
 
 int main(int argc, char **argv)
 {
-	void *libComposant1 = dlopen("libComposant1.so", 1);
-	void *libComposant2 = dlopen("libComposant2.so", 1);
+	std::string lib1;
+	std::cout << "Chemin de la 1ère lib ? ";
+	std::cin >> lib1;
+
+	std::string lib2;
+	std::cout << "Chemin de la 2ème lib ? ";
+	std::cin >> lib2;
+
+	void *libComposant1 = dlopen(lib1.c_str(), 1);
+	void *libComposant2 = dlopen(lib2.c_str(), 1);
 
 	int data1 = 3;
 	int data2 = 5;
